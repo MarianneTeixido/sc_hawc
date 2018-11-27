@@ -5,3 +5,7 @@ Sistema cuadrafónico de audio para manipular en tiempo real los datos provenien
 
 De forma adicional contiene buffers con muestras de audio retomadas de las entrevistas realizadas por Cintia Durán a astrónomos del Instituto de Astronomía, acerca de la emisión de rayos gamma.  
 
+sc_hawc está conectado vía OSC con ofhawc https://github.com/EmilioOcelotl/ofhawc para manipular la luminosidad de cada fuente según la lectura de valores. 
+
+## Contexto
+Código de
