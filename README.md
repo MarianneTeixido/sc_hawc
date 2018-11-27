@@ -8,4 +8,4 @@ De forma adicional contiene buffers con muestras de audio retomadas de las entre
 sc_hawc está conectado vía OSC con ofhawc https://github.com/EmilioOcelotl/ofhawc para manipular la luminosidad de cada fuente según la lectura de valores. 
 
 ## Contexto
-Código de
+Código desarrollado en el marco del Hackaton Astronómico ACT 2018.
