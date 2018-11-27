@@ -18,7 +18,8 @@ Server.local.options.numInputBusChannels =  4;
 Server.local.options.numOutputBusChannels =  4;
 
 //dirección buffers
-w = PathName.new("~/Documents/algoraves/samples/".standardizePath);
+
+w = PathName.new("~/Documents/of_v0.9.8_osx_release/apps/myApps/ofhawc/bin/data/entrevistas/".standardizePath);
 
 //r = Buffer.read(s,w.pathOnly++"bufagua01.aiff");
 r = [Buffer.read(s,w.pathOnly++"bufagua01.aiff"),Buffer.read(s,w.pathOnly++"bufagua02.aiff"),
@@ -237,7 +238,7 @@ s.meter
 
 s.meter
 
-//audio videos
+//entrevistas
 ~buf01.play
 ~buf02.play
 
@@ -254,11 +255,9 @@ s.meter
 ~v11.play;
 
 
-
-//audio
+//entrevistas
 
 ~buf01 = {PlayBuf.ar(2,r[1],BufRateScale.kr(r[1])  * [1, 1.05], Impulse.kr(Demand.kr(Impulse.kr(~tempo), 0, Drand([2, 3, 4,5]*1, inf))), BufFrames.kr(r[1])*Demand.kr(Impulse.kr(~tempo),0,Dseq([0],inf))).clip2(0.2)*[0.001,2,0.001,0.001]};
-
 
 
 ~v01 = {PlayBuf.ar(1,r[3],BufRateScale.kr(r[3]) * 1, Impulse.kr(Demand.kr(Impulse.kr(~tempo), 0, Dseq([0.125/4]*1, inf))), BufFrames.kr(r[3])*Demand.kr(Impulse.kr(~tempo),0,Dseq([0],inf))).clip2(0.2)*[4,0.1,0.1,0.1]};
